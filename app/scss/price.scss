@@ -1,0 +1,101 @@
+.price{
+    width: 100%;
+    padding-top: 120px;
+    background: #fff;
+    padding-bottom: 120px;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &-start{
+            display: flex;
+            flex-direction: column;
+            gap: 136px;
+            img{
+                width: 472px;
+                height: 348px;
+            }
+            &-text{
+                display: flex;
+                flex-direction: column;
+                gap: 34px;
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    max-width: 297px;
+                    span{
+                        font-family: var(--bold);
+                    }
+                }
+                a{
+                    border-radius: 80px;
+                    font-family: var(--bold);
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: #fff;
+                    background: #2CB8E7;
+                    padding: 18px 40px;
+                    max-width: max-content;
+                }
+            }
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            &-title{
+                font-family: var(--bold);
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 55.86px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #053556;
+                max-width: 570px;
+            }
+            &-block{
+                display: flex;
+                flex-direction: column;
+                max-width: 570px;
+                &-item{
+                    display: flex;
+                    align-items: center;
+                    gap: 42px;
+                    span{
+                        font-family: var(--bold);
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 49px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #2CB8E7;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 49px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #053556;
+                    }
+                }
+                .line{
+                    width: 100%;
+                    height: 1px;
+                    background: #0535561F;
+                }
+            }
+        }
+    }
+}

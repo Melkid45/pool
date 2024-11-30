@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/style.min.css">
+    <title>Русвент</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="" class="header__body-logo">
+                    Русвент
+                </a>
+                <nav class="header__body-menu desk">
+                    <ul class="header__body-menu-list">
+                        <li>
+                            <a href="#why">Почему мы</a>
+                        </li>
+                        <li>
+                            <a href="#price">Стоимость</a>
+                        </li>
+                        <li>
+                            <a href="#system">Этапы работы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__body-contact">
+                    <div class="header__body-contact-left">
+                        <div class="header__body-contact-left-social">
+                            <a href="">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.8871 5.06812C25.8871 5.06812 28.3154 4.12124 28.113 6.4208C28.0456 7.36769 27.4385 10.6818 26.9663 14.2664L25.3474 24.8849C25.3474 24.8849 25.2126 26.4405 23.9984 26.7111C22.7842 26.9816 20.963 25.7642 20.6257 25.4936C20.3559 25.2908 15.5668 22.2472 13.8804 20.7593C13.4082 20.3534 12.8686 19.5418 13.9478 18.5949L21.0304 11.8316C21.8399 11.0199 22.6493 9.12619 19.2766 11.4258L9.83319 17.851C9.83319 17.851 8.75394 18.5273 6.73038 17.9186L2.34589 16.5659C2.34589 16.5659 0.727007 15.5514 3.49259 14.5369C10.2379 11.3581 18.5347 8.11163 25.8871 5.06812Z" fill="#2CB8E7"/>
+                                </svg>                                
+                            </a>
+                            <a href="">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.001 3C21.9047 3 27.501 8.59625 27.501 15.5C27.501 22.4037 21.9047 28 15.001 28C12.7919 28.0038 10.6217 27.4192 8.7135 26.3063L2.506 28L4.196 21.79C3.08219 19.8812 2.49712 17.71 2.501 15.5C2.501 8.59625 8.09725 3 15.001 3ZM10.741 9.625L10.491 9.635C10.3294 9.64614 10.1714 9.68859 10.026 9.76C9.89046 9.83689 9.7667 9.93287 9.6585 10.045C9.5085 10.1863 9.4235 10.3087 9.33225 10.4275C8.8699 11.0286 8.62096 11.7666 8.62475 12.525C8.62725 13.1375 8.78725 13.7338 9.03725 14.2913C9.5485 15.4187 10.3897 16.6125 11.4997 17.7188C11.7672 17.985 12.0297 18.2525 12.3122 18.5013C13.6915 19.7155 15.3351 20.5912 17.1122 21.0588L17.8222 21.1675C18.0535 21.18 18.2847 21.1625 18.5172 21.1512C18.8812 21.1321 19.2366 21.0335 19.5585 20.8625C19.7221 20.7779 19.8818 20.6862 20.0372 20.5875C20.0372 20.5875 20.0902 20.5517 20.1935 20.475C20.3622 20.35 20.466 20.2612 20.606 20.115C20.711 20.0067 20.7985 19.8808 20.8685 19.7375C20.966 19.5338 21.0635 19.145 21.1035 18.8212C21.1335 18.5737 21.1247 18.4388 21.121 18.355C21.116 18.2213 21.0047 18.0825 20.8835 18.0238L20.156 17.6975C20.156 17.6975 19.0685 17.2238 18.4035 16.9213C18.3339 16.8909 18.2593 16.8736 18.1835 16.87C18.098 16.8611 18.0115 16.8706 17.93 16.898C17.8485 16.9254 17.7738 16.97 17.711 17.0287C17.7047 17.0262 17.621 17.0975 16.7172 18.1925C16.6654 18.2622 16.5939 18.3149 16.512 18.3438C16.4301 18.3728 16.3414 18.3767 16.2572 18.355C16.1758 18.3333 16.096 18.3057 16.0185 18.2725C15.8635 18.2075 15.8097 18.1825 15.7035 18.1375C14.9858 17.8249 14.3215 17.4018 13.7347 16.8838C13.5772 16.7463 13.431 16.5962 13.281 16.4513C12.7893 15.9803 12.3607 15.4475 12.006 14.8663L11.9322 14.7475C11.8801 14.6672 11.8373 14.5813 11.8047 14.4913C11.7572 14.3075 11.881 14.16 11.881 14.16C11.881 14.16 12.1847 13.8275 12.326 13.6475C12.4635 13.4725 12.5797 13.3025 12.6547 13.1813C12.8022 12.9438 12.8485 12.7 12.771 12.5113C12.421 11.6562 12.0593 10.8058 11.686 9.96C11.6122 9.7925 11.3935 9.6725 11.1947 9.64875C11.1272 9.64042 11.0597 9.63375 10.9922 9.62875C10.8244 9.61912 10.6561 9.62079 10.4885 9.63375L10.741 9.625Z" fill="#61D06A"/>
+                                </svg>                                
+                            </a>
+                        </div>
+                        <div class="line"></div>
+                        <a href="" class="header__body-contact-left-num">
+                            +7 (495) 660-83-02
+                        </a>
+                    </div>
+                    <a href="#feedback" class="header__body-contact-btn desk">
+                        Связаться с нами
+                    </a>
+                </div>
+                <button class="burger mob">
+                    <div class="burger__wrap">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+            <div class="header__mobile mob">
+                <nav class="header__body-menu">
+                    <ul class="header__body-menu-list">
+                        <li>
+                            <a href="#why">Почему мы</a>
+                        </li>
+                        <li>
+                            <a href="#price">Стоимость</a>
+                        </li>
+                        <li>
+                            <a href="#system">Этапы работы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__body-contact">
+                    <a href="#feedback" class="header__body-contact-btn">
+                        Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__body">
+                <div class="main__body-info">
+                    <div class="main__body-info-text">
+                        <p>
+                            РАБОТАЕМ <br>
+                            С 2003 года
+                        </p>
+                        <h1>
+                            <span>Проектирование и монтаж</span> систем вентиляции в частных бассейнах
+                            с 2003 года
+                        </h1>
+                    </div>
+                    <div class="main__body-info-bot">
+                        <a href="#feedback">
+                            Оставить заявку
+                        </a>
+                        <p>Оставьте заявку и получите консультацию нашего инженера</p>
+                    </div>
+                </div>
+                <img src="../images/dist/main.png" alt="">
+            </div>
+        </div>
+    </main>
+    <section id="why" class="why">
+        <div class="container">
+            <div class="why__body">
+                <h2 class="why__body-title">
+                    Почему мы?
+                </h2>
+                <div class="why__body-block">
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/1.png" alt="">                     
+                        <p>Огромный опыт в монтаже
+                            и проектировании
+                            вентиляции бассейнов</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/2.png" alt="">                             
+                        <p>Знаем тонкости подбора
+                            оборудования</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/3.png" alt="">      
+                        <p>Знаем какие системы
+                            работают хорошо, 
+                            а которых нужно избегать</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/4.png" alt="">                           
+                        <p>Знаем разницу 
+                            и нюансы оборудования 
+                            из первоисточников</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/5.png" alt="">                            
+                        <p>Являемся дилерами 
+                            большинства 
+                            производителей 
+                            вент оборудования</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/6.png" alt="">      
+                        <p>Применяем современные
+                            решетки и диффузоры</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/7.png" alt="">      
+                        <p>Применяем 
+                            как премиальное 
+                            оборудование, 
+                            так и недорогие решения</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/8.png" alt="">                             
+                        <p>Знаем как правильно
+                            настроить систему</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/9.png" alt="">                             
+                        <p>Можем управлять
+                            системой из любой
+                            точки земли</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/10.png" alt="">                            
+                        <p>Обслуживаем систему
+                            на протяжении всего 
+                            срока службы</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/11.png" alt="">                             
+                        <p>Осуществляем
+                            техническую поддержку
+                            24/7</p>
+                    </div>
+                    <div class="why__body-block-item">
+                        <img src="../images/dist/why/12.png" alt="">                             
+                        <p>Специализируемся 
+                            только на частных 
+                            бассейнах</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price" class="price">
+        <div class="container">
+            <div class="price__body">
+                <div class="price__body-start">
+                    <img src="../images/dist/price.png" alt="">
+                    <div class="price__body-start-text">
+                        <p>
+                            <span>Хотите узнать точную стоимость?</span> Свяжитесь с нашими специалистами
+                        </p>
+                        <a href="#feedback">
+                            Связаться с нами
+                        </a>
+                    </div>
+                </div>
+                <div class="price__body-info">
+                    <span class="price__body-info-title">
+                        Из чего складывается стоимость вентиляции бассейна
+                    </span>
+                    <div class="price__body-info-block">
+                        <div class="price__body-info-block-item">
+                            <span>1</span>
+                            <p>вент установка(и)</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>2</span>
+                            <p>воздуховоды и фассонные изделия</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>3</span>
+                            <p>теплозоляционные материалы</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>4</span>
+                            <p>расходные материалы</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>5</span>
+                            <p>воздухораспределительные устройства (решетки и диффузоры)</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>6</span>
+                            <p>работы по проектированию</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>7</span>
+                            <p>транспортные и такелажные работы</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>8</span>
+                            <p>монтажные работы</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="price__body-info-block-item">
+                            <span>9</span>
+                            <p>пусконаладочные работы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="system" class="system">
+        <div class="system__body">
+            <h2>Как мы создаем свои системы</h2>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide system__body-slide">
+                            <img src="../images/dist/system/1.png" alt="">
+                            <span>
+                                01
+                            </span>
+                            <p>приедем <br>
+                                на объект</p>
+                        </li>
+                        <li class="splide__slide system__body-slide">
+                            <img src="../images/dist/system/2.png" alt="">
+                            <span>
+                                02
+                            </span>
+                            <p>составим <br>
+                                тех задание</p>
+                        </li>
+                        <li class="splide__slide system__body-slide">
+                            <img src="../images/dist/system/3.png" alt="">
+                            <span>
+                                03
+                            </span>
+                            <p>подберем <br>
+                                оборудование</p>
+                        </li>
+                        <li class="splide__slide system__body-slide">
+                            <img src="../images/dist/system/4.png" alt="">
+                            <span>
+                                04
+                            </span>
+                            <p>
+                                сделаем <br>
+                                ваш проект
+                            </p>
+                        </li>
+                        <li class="splide__slide system__body-slide">
+                            <img src="../images/dist/system/5.png" alt="">
+                            <span>
+                                05
+                            </span>
+                            <p>смонтируем <br> оборудование и сеть <br> воздуховодов</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.50006 10.9999L16.0861 10.9999L11.5861 6.49994L13.0001 5.08594L19.9141 11.9999L13.0001 18.9139L11.5861 17.4999L16.0861 12.9999L4.50006 12.9999L4.50006 10.9999Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.50006 10.9999L16.0861 10.9999L11.5861 6.49994L13.0001 5.08594L19.9141 11.9999L13.0001 18.9139L11.5861 17.4999L16.0861 12.9999L4.50006 12.9999L4.50006 10.9999Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__body">
+                <h2>
+                    Примеры наших работ
+                </h2>
+                <div class="portfolio__body-block">
+                    <div class="portfolio__body-block-item">
+                        <div class="portfolio__body-block-item-info">
+                            <span class="portfolio__body-block-item-info-title">
+                                Разработка системы вентиляции для бассейна спорткомплекса в г. Москва
+                            </span>
+                            <div class="portfolio__body-block-item-info-attr">
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бассейн:</span>
+                                    <p>120 м2</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Срок реализации:</span>
+                                    <p>1 месяц</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бюджет:</span>
+                                    <p>120 тыс.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="portfolio__body-block-item-desc">
+                            Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой.
+                        </p>
+                        <button class="portfolio__body-block-item-more">
+                            Читать полностью
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16645 13.4767L9.16645 3.33342L10.8331 3.33342L10.8331 13.4767L15.3031 9.00675L16.4814 10.1851L9.99978 16.6667L3.51811 10.1851L4.69645 9.00675L9.16645 13.4767Z" fill="#2CB8E7"/>
+                            </svg>                            
+                        </button>
+                        <div class="portfolio__body-block-item-gallery">
+                            <img src="../images/dist/gal/1.png" alt="">
+                            <img src="../images/dist/gal/2.png" alt="">
+                            <img src="../images/dist/gal/3.png" alt="">
+                            <img src="../images/dist/gal/4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="portfolio__body-block-item">
+                        <div class="portfolio__body-block-item-info">
+                            <span class="portfolio__body-block-item-info-title">
+                                Разработка системы вентиляции для бассейна спорткомплекса в г. Москва
+                            </span>
+                            <div class="portfolio__body-block-item-info-attr">
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бассейн:</span>
+                                    <p>120 м2</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Срок реализации:</span>
+                                    <p>1 месяц</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бюджет:</span>
+                                    <p>120 тыс.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="portfolio__body-block-item-desc">
+                            Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой.
+                        </p>
+                        <button class="portfolio__body-block-item-more">
+                            Читать полностью
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16645 13.4767L9.16645 3.33342L10.8331 3.33342L10.8331 13.4767L15.3031 9.00675L16.4814 10.1851L9.99978 16.6667L3.51811 10.1851L4.69645 9.00675L9.16645 13.4767Z" fill="#2CB8E7"/>
+                            </svg>                            
+                        </button>
+                        <div class="portfolio__body-block-item-gallery">
+                            <img src="../images/dist/gal/1.png" alt="">
+                            <img src="../images/dist/gal/2.png" alt="">
+                            <img src="../images/dist/gal/3.png" alt="">
+                            <img src="../images/dist/gal/4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="portfolio__body-block-item">
+                        <div class="portfolio__body-block-item-info">
+                            <span class="portfolio__body-block-item-info-title">
+                                Разработка системы вентиляции для бассейна спорткомплекса в г. Москва
+                            </span>
+                            <div class="portfolio__body-block-item-info-attr">
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бассейн:</span>
+                                    <p>120 м2</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Срок реализации:</span>
+                                    <p>1 месяц</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бюджет:</span>
+                                    <p>120 тыс.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="portfolio__body-block-item-desc">
+                            Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой.
+                        </p>
+                        <button class="portfolio__body-block-item-more">
+                            Читать полностью
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16645 13.4767L9.16645 3.33342L10.8331 3.33342L10.8331 13.4767L15.3031 9.00675L16.4814 10.1851L9.99978 16.6667L3.51811 10.1851L4.69645 9.00675L9.16645 13.4767Z" fill="#2CB8E7"/>
+                            </svg>                            
+                        </button>
+                        <div class="portfolio__body-block-item-gallery">
+                            <img src="../images/dist/gal/1.png" alt="">
+                            <img src="../images/dist/gal/2.png" alt="">
+                            <img src="../images/dist/gal/3.png" alt="">
+                            <img src="../images/dist/gal/4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="portfolio__body-block-item">
+                        <div class="portfolio__body-block-item-info">
+                            <span class="portfolio__body-block-item-info-title">
+                                Разработка системы вентиляции для бассейна спорткомплекса в г. Москва
+                            </span>
+                            <div class="portfolio__body-block-item-info-attr">
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бассейн:</span>
+                                    <p>120 м2</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Срок реализации:</span>
+                                    <p>1 месяц</p>
+                                </div>
+                                <div class="portfolio__body-block-item-info-attr-element">
+                                    <span>Бюджет:</span>
+                                    <p>120 тыс.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="portfolio__body-block-item-desc">
+                            Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой. Текст-описание небольшой.
+                        </p>
+                        <button class="portfolio__body-block-item-more">
+                            Читать полностью
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16645 13.4767L9.16645 3.33342L10.8331 3.33342L10.8331 13.4767L15.3031 9.00675L16.4814 10.1851L9.99978 16.6667L3.51811 10.1851L4.69645 9.00675L9.16645 13.4767Z" fill="#2CB8E7"/>
+                            </svg>                            
+                        </button>
+                        <div class="portfolio__body-block-item-gallery">
+                            <img src="../images/dist/gal/1.png" alt="">
+                            <img src="../images/dist/gal/2.png" alt="">
+                            <img src="../images/dist/gal/3.png" alt="">
+                            <img src="../images/dist/gal/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button class="portfolio__body-btn">
+                    Показать еще
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <div class="feedback__body">
+                <img class="desk" src="../images/dist/form.png" alt="">
+                <img class="mob" src="../images/dist/form__mob.png" alt="">
+                <div class="feedback__body-text">
+                    <span>НУЖНА ПОМОЩЬ С ВЫБОРОМ ОБОРУДОВАНИЯ?</span>
+                    <p>Оставьте заявку, наши инженеры проконсультируют вас и помогут с подбором установки</p>
+                </div>
+                <form action="" class="feedback__body-form">
+                    <div class="feedback__body-form-inp">
+                        <input placeholder="Ваше имя" type="text">
+                        <input placeholder="Ваш телефон" type="tel">
+                    </div>
+                    <button class="feedback__body-form-btn">
+                        Связаться с нами
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__body-top">
+                    <a href="" class="footer__body-top-logo">
+                        Русвент
+                    </a>
+                    <nav class="footer__body-top-menu desk">
+                        <ul class="footer__body-top-menu-list">
+                            <li>
+                                <a href="#why">Почему мы</a>
+                            </li>
+                            <li>
+                                <a href="#price">Стоимость</a>
+                            </li>
+                            <li>
+                                <a href="#system">Этапы работы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__body-top-wrap mob">
+                        <div class="footer__body-top-contact-start">
+                            <span>25502, г.Москва, ул.Лавочкина, д.23, стр.1</span>
+                            <a href="">+7 (495) 660-83-02</a>
+                            <div class="footer__body-top-contact-start-social">
+                                <a href="">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8871 4.56812C25.8871 4.56812 28.3154 3.62124 28.113 5.9208C28.0456 6.86769 27.4385 10.1818 26.9663 13.7664L25.3474 24.3849C25.3474 24.3849 25.2126 25.9405 23.9984 26.2111C22.7842 26.4816 20.963 25.2642 20.6257 24.9936C20.3559 24.7908 15.5668 21.7472 13.8804 20.2593C13.4082 19.8534 12.8686 19.0418 13.9478 18.0949L21.0304 11.3316C21.8399 10.5199 22.6493 8.62619 19.2766 10.9258L9.83319 17.351C9.83319 17.351 8.75394 18.0273 6.73038 17.4186L2.34589 16.0659C2.34589 16.0659 0.727007 15.0514 3.49259 14.0369C10.2379 10.8581 18.5347 7.61163 25.8871 4.56812Z" fill="#2CB8E7"/>
+                                    </svg>                                
+                                </a>
+                                <a href="">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.001 2.5C21.9047 2.5 27.501 8.09625 27.501 15C27.501 21.9037 21.9047 27.5 15.001 27.5C12.7919 27.5038 10.6217 26.9192 8.7135 25.8063L2.506 27.5L4.196 21.29C3.08219 19.3812 2.49712 17.21 2.501 15C2.501 8.09625 8.09725 2.5 15.001 2.5ZM10.741 9.125L10.491 9.135C10.3294 9.14614 10.1714 9.18859 10.026 9.26C9.89046 9.33689 9.7667 9.43287 9.6585 9.545C9.5085 9.68625 9.4235 9.80875 9.33225 9.9275C8.8699 10.5286 8.62096 11.2666 8.62475 12.025C8.62725 12.6375 8.78725 13.2338 9.03725 13.7913C9.5485 14.9187 10.3897 16.1125 11.4997 17.2188C11.7672 17.485 12.0297 17.7525 12.3122 18.0013C13.6915 19.2155 15.3351 20.0912 17.1122 20.5588L17.8222 20.6675C18.0535 20.68 18.2847 20.6625 18.5172 20.6512C18.8812 20.6321 19.2366 20.5335 19.5585 20.3625C19.7221 20.2779 19.8818 20.1862 20.0372 20.0875C20.0372 20.0875 20.0902 20.0517 20.1935 19.975C20.3622 19.85 20.466 19.7612 20.606 19.615C20.711 19.5067 20.7985 19.3808 20.8685 19.2375C20.966 19.0338 21.0635 18.645 21.1035 18.3212C21.1335 18.0737 21.1247 17.9388 21.121 17.855C21.116 17.7213 21.0047 17.5825 20.8835 17.5238L20.156 17.1975C20.156 17.1975 19.0685 16.7238 18.4035 16.4213C18.3339 16.3909 18.2593 16.3736 18.1835 16.37C18.098 16.3611 18.0115 16.3706 17.93 16.398C17.8485 16.4254 17.7738 16.47 17.711 16.5287C17.7047 16.5262 17.621 16.5975 16.7172 17.6925C16.6654 17.7622 16.5939 17.8149 16.512 17.8438C16.4301 17.8728 16.3414 17.8767 16.2572 17.855C16.1758 17.8333 16.096 17.8057 16.0185 17.7725C15.8635 17.7075 15.8097 17.6825 15.7035 17.6375C14.9858 17.3249 14.3215 16.9018 13.7347 16.3838C13.5772 16.2463 13.431 16.0962 13.281 15.9513C12.7893 15.4803 12.3607 14.9475 12.006 14.3663L11.9322 14.2475C11.8801 14.1672 11.8373 14.0813 11.8047 13.9913C11.7572 13.8075 11.881 13.66 11.881 13.66C11.881 13.66 12.1847 13.3275 12.326 13.1475C12.4635 12.9725 12.5797 12.8025 12.6547 12.6813C12.8022 12.4438 12.8485 12.2 12.771 12.0113C12.421 11.1562 12.0593 10.3058 11.686 9.46C11.6122 9.2925 11.3935 9.1725 11.1947 9.14875C11.1272 9.14042 11.0597 9.13375 10.9922 9.12875C10.8244 9.11912 10.6561 9.12079 10.4885 9.13375L10.741 9.125Z" fill="#61D06A"/>
+                                    </svg>                                
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="footer__body-top-menu">
+                            <ul class="footer__body-top-menu-list">
+                                <li>
+                                    <a href="#why">Почему мы</a>
+                                </li>
+                                <li>
+                                    <a href="#price">Стоимость</a>
+                                </li>
+                                <li>
+                                    <a href="#system">Этапы работы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__body-top-contact">
+                        <div class="footer__body-top-contact-start desk">
+                            <span>25502, г.Москва, ул.Лавочкина, д.23, стр.1</span>
+                            <a href="">+7 (495) 660-83-02</a>
+                            <div class="footer__body-top-contact-start-social">
+                                <a href="">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.8871 4.56812C25.8871 4.56812 28.3154 3.62124 28.113 5.9208C28.0456 6.86769 27.4385 10.1818 26.9663 13.7664L25.3474 24.3849C25.3474 24.3849 25.2126 25.9405 23.9984 26.2111C22.7842 26.4816 20.963 25.2642 20.6257 24.9936C20.3559 24.7908 15.5668 21.7472 13.8804 20.2593C13.4082 19.8534 12.8686 19.0418 13.9478 18.0949L21.0304 11.3316C21.8399 10.5199 22.6493 8.62619 19.2766 10.9258L9.83319 17.351C9.83319 17.351 8.75394 18.0273 6.73038 17.4186L2.34589 16.0659C2.34589 16.0659 0.727007 15.0514 3.49259 14.0369C10.2379 10.8581 18.5347 7.61163 25.8871 4.56812Z" fill="#2CB8E7"/>
+                                    </svg>                                
+                                </a>
+                                <a href="">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.001 2.5C21.9047 2.5 27.501 8.09625 27.501 15C27.501 21.9037 21.9047 27.5 15.001 27.5C12.7919 27.5038 10.6217 26.9192 8.7135 25.8063L2.506 27.5L4.196 21.29C3.08219 19.3812 2.49712 17.21 2.501 15C2.501 8.09625 8.09725 2.5 15.001 2.5ZM10.741 9.125L10.491 9.135C10.3294 9.14614 10.1714 9.18859 10.026 9.26C9.89046 9.33689 9.7667 9.43287 9.6585 9.545C9.5085 9.68625 9.4235 9.80875 9.33225 9.9275C8.8699 10.5286 8.62096 11.2666 8.62475 12.025C8.62725 12.6375 8.78725 13.2338 9.03725 13.7913C9.5485 14.9187 10.3897 16.1125 11.4997 17.2188C11.7672 17.485 12.0297 17.7525 12.3122 18.0013C13.6915 19.2155 15.3351 20.0912 17.1122 20.5588L17.8222 20.6675C18.0535 20.68 18.2847 20.6625 18.5172 20.6512C18.8812 20.6321 19.2366 20.5335 19.5585 20.3625C19.7221 20.2779 19.8818 20.1862 20.0372 20.0875C20.0372 20.0875 20.0902 20.0517 20.1935 19.975C20.3622 19.85 20.466 19.7612 20.606 19.615C20.711 19.5067 20.7985 19.3808 20.8685 19.2375C20.966 19.0338 21.0635 18.645 21.1035 18.3212C21.1335 18.0737 21.1247 17.9388 21.121 17.855C21.116 17.7213 21.0047 17.5825 20.8835 17.5238L20.156 17.1975C20.156 17.1975 19.0685 16.7238 18.4035 16.4213C18.3339 16.3909 18.2593 16.3736 18.1835 16.37C18.098 16.3611 18.0115 16.3706 17.93 16.398C17.8485 16.4254 17.7738 16.47 17.711 16.5287C17.7047 16.5262 17.621 16.5975 16.7172 17.6925C16.6654 17.7622 16.5939 17.8149 16.512 17.8438C16.4301 17.8728 16.3414 17.8767 16.2572 17.855C16.1758 17.8333 16.096 17.8057 16.0185 17.7725C15.8635 17.7075 15.8097 17.6825 15.7035 17.6375C14.9858 17.3249 14.3215 16.9018 13.7347 16.3838C13.5772 16.2463 13.431 16.0962 13.281 15.9513C12.7893 15.4803 12.3607 14.9475 12.006 14.3663L11.9322 14.2475C11.8801 14.1672 11.8373 14.0813 11.8047 13.9913C11.7572 13.8075 11.881 13.66 11.881 13.66C11.881 13.66 12.1847 13.3275 12.326 13.1475C12.4635 12.9725 12.5797 12.8025 12.6547 12.6813C12.8022 12.4438 12.8485 12.2 12.771 12.0113C12.421 11.1562 12.0593 10.3058 11.686 9.46C11.6122 9.2925 11.3935 9.1725 11.1947 9.14875C11.1272 9.14042 11.0597 9.13375 10.9922 9.12875C10.8244 9.11912 10.6561 9.12079 10.4885 9.13375L10.741 9.125Z" fill="#61D06A"/>
+                                    </svg>                                
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#feedback" class="footer__body-top-contact-btn">
+                            Связаться с нами
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__body-bot">
+                    <span>РУСВЕНТ - вентиляционное оборудование для бассейнов</span>
+                    <a href="">Политика конфиденциальности</a>
+                    <span>Все права зазищены</span>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="../js/main.min.js"></script>
+</body>
+</html>
+
+
